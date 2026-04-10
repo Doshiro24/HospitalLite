@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HospitalLite.Core.Entities
 {
-    public class Appoinment:BaseEntity
+    public class Appointment:BaseEntity
     {
         public int PatientId { get; set; }
         public virtual AppUser Patient { get; set; } = null!; // hasta aslında AppUser tablosunda yer alır, Role'ü UserRole.Patient olmalıdır

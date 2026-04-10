@@ -17,5 +17,7 @@ namespace HospitalLite.Core.Entities
         public UserRole Role { get; set; }
         public string? RefreshToken { get; set; }
         public DateTime? RefreshTokenEndDate { get; set; }
+
+        public virtual ICollection<UserClaim> UserClaims { get; set; } = new List<UserClaim>();
     }
 }
